@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Development Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #00ff00;
+            --bg-dark: #0a192f;
+            --text-light: #8892b0;
+            --text-bright: #ccd6f6;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Consolas', monospace;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            padding-top: 80px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(10, 25, 47, 0.9);
+            padding: 1rem 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav a {
+            color: var(--text-bright);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            color: var(--text-bright);
+            font-size: 2.5rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .blog-card {
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            padding: 1.5rem;
+            background-color: rgba(0, 255, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(0, 255, 0, 0.1);
+        }
+
+        .blog-card h2 {
+            color: var(--text-bright);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card h2 a {
+            color: var(--text-bright);
+            text-decoration: none;
+        }
+
+        .blog-card h2 a:hover {
+            color: var(--primary-color);
+        }
+
+        .blog-meta {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .blog-meta span {
+            margin-right: 1rem;
+        }
+
+        .blog-meta i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        .blog-intro {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: rgba(0, 255, 0, 0.1);
+            color: var(--primary-color);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid var(--primary-color);
+            color: var(--text-light);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 4rem 0;
+            color: var(--text-light);
+        }
+
+        .empty-state i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">AI Development Blog</a>
+            <a href="https://github.com/VOY463-code" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Latest Blog Posts</h1>
+        
+        <div class="blog-grid">
+            <article class="blog-card">
+                <h2><a href="exploring-the-latest-ai-tools-and-innovations.html">Exploring the Latest AI Tools and Innovations</a></h2>
+                <div class="blog-meta">
+                    <span><i class="far fa-calendar-alt"></i>December 01, 2024</span>
+                    <span><i class="far fa-user"></i>Sander Mirck</span>
+                </div>
+                <div class="blog-intro">Discover the latest advancements in AI tools and technologies that are shaping the future of various industries. From generative models to automation, explore how these innovations are transforming our world.</div>
+                <div class="tags"><span class="tag">AI</span><span class="tag">Technology</span><span class="tag">Innovation</span></div>
+                <a href="exploring-the-latest-ai-tools-and-innovations.html" class="read-more">Read More →</a>
+            </article>
+        </div>
+
+        <footer>
+            <p> 2024 AI Development Blog. Built with by Cascade.</p>
+        </footer>
+    </div>
+</body>
+</html>
